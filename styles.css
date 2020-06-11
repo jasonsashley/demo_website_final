@@ -1,0 +1,156 @@
+:root{
+  --main-dark-color: #383433;
+  --main-light-color: #F9F9FB;
+  --alt-color: #704640;
+  --accent-color: #D37B2C;
+}
+
+body {
+  background-color: var(--main-light-color);
+  font-family:'Railway', sans-serif;
+}
+nav {
+  background-color: var(--main-dark-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 100vw;
+  z-index: 1;
+}
+nav ul li {
+  float: right;
+  margin-right: 50px;
+  list-style-type: none;
+  text-align: center;
+  font-size: 12pt;
+}
+.nav-link{
+  color: var(--main-light-color);
+  text-decoration: none;
+  font-family: 'Arial Black', sans-serif;
+}
+.nav-link:hover {
+  color: var(--alt-color);
+}
+#brand {
+  float: left;
+  font-size: 30pt;
+  margin-top:-15px;
+  margin-left:-15px;
+}
+#brand .nav-link:hover {
+  color: var(--accent-color);
+}
+.choice-button {
+  background-color: var(--main-dark-color);
+  border: none;
+  color: var(--main-light-color);
+  font-family: 'Arial Black', sans-serif;
+  font-size: 12pt;
+}
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+.choice-content {
+  display: none;
+  position: absolute;
+  background-color: var(--main-dark-color);
+}
+.dropdown:hover .choice-content{
+  display: block;
+}
+h1 {
+  font-size: 60pt;
+}
+#home {
+  margin-top: 50px;
+  position: relative;
+  left: -8px;
+  width: 100vw;
+  height: 35vh;
+  padding-top: 3em;
+  background: linear-gradient(var(--main-dark-color) 10%,transparent 40%) fixed, url(./assets/autumn_woods.jpg) center 75% no-repeat fixed;
+  background-size: cover;
+}
+.header-tag {
+  text-align: center;
+  color: var(--main-light-color);
+  text-shadow: 2px 2px 4px black;
+}
+h3.header-tag {
+  margin-top: -40px;
+  font-size: 18pt;
+}
+h2 {
+  font-family: 'Arial Black', sans-serif;
+  color: var(--accent-color);
+  text-align: center;
+}
+.main {
+  text-align: center;
+}
+#about {
+  margin-top: 40px;
+  display: inline-block;
+}
+#about-picture {
+  width: 40vw;
+  float: left;
+  margin-top: 20px;
+}
+#profile-pic {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 10em;
+  box-shadow: 2px 2px 2px black;
+}
+#about-content {
+  width: 40vw;
+  float: right;
+  text-align: justify;
+}
+#contact-form {
+  margin: auto;
+  margin-top: 100px;
+  width: 30vw;
+  background-color: var(--main-dark-color);
+  text-align: center;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 50px;
+  border-radius: .4em;
+}
+#contact-form input {
+  width: 90%;
+  margin-bottom: 20px;
+  height: 50px;
+  font-size: 18px;
+  text-align: center;
+}
+#contact-form h2 {
+  color: var(--accent-color);
+  font-size: 28pt;
+  text-shadow: 2px 2px 2px black;
+}
+textarea {
+  resize: none;
+  height: 200px;
+  width: 90%;
+  margin-bottom: 30px;
+}
+#about-page p {
+  width: 40vw;
+  margin: 0 auto;
+  text-align: justify;
+}
+#bare-page {
+  margin-top: 70px;
+}
+#bare-page p {
+  width: 40vw;
+  margin: 0 auto;
+  text-align: justify;
+}
